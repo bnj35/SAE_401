@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/log.css">
+    <title>Sign in</title>
+</head>
+<body>
+    <div class="block">
+        <header>
+            <div class="box">
+                <h1>Connexion ?</h1>
+                <h3>You have an account ? if not click -><a href="/register">here</a> <-</h3>
+            </div>
+            <div class="in">
+                <a href="/home">Home</a>
+                <a href="/register">Sign up</a>
+            </div>
+        </header>
+        <container class="container">
+            <form method="post" action="{{url_for('connexion')}}">
+                <input type="text" id="pseudo" name="pseudo" required placeholder="Pseudo">
+                <input type="password" id="password" name="password" required placeholder="Password">
+            
+                <button type="submit" class="btn">Send</button>
+                </form> 
+        </container>
+    </div>
+</body>
+</html>

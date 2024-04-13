@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <!-- templates/base.html
+      https://twig.symfony.com/doc/3.x/templates.html -->
+  <head>
+    <meta charset="utf-8">
+    {% block morehead %}{% endblock %}
+    <title id="titre">SAE 401</title>
+    <title id="titre">{% block title %}{% endblock %}</title>
+  <body>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <footer style>
+      &copy; Copyright 2024 by bnj
+    </footer>    
+  </body>
+</html>

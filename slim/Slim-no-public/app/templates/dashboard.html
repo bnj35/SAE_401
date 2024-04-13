@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="block">
+    <header>
+        <div class="box">
+            <h1>Your files : </h1>
+            <h3>this page is yours !!!</h3>
+        </div>
+        <div class="in">
+            <a href="/deconnexion">log out</a>
+            <a href="/formulaire">add</a>
+        </div>
+    </header>
+    <container class="container">
+        {% for files in files %}
+        <card class="card">
+            <div class="display" data-file="{{files.file}}"></div>
+            <h2>{{ files.title }}</h2>
+            <p>{{ files.description }}</p>
+        </card>
+        {% endfor %}
+    </container>
+</div>
+<script type="module" src="/assets/js/OrbitControls.js"></script>
+<script type="module" src="/assets/js/three.module.js"></script>
+<script type="module" src="/assets/js/STLLoader.js"></script>
+<script type="module" src="/assets/js/script.js"></script>
+</body>
+</html>

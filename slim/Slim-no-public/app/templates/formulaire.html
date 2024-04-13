@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <title>Add a new file</title>
+</head>
+<body>
+    <div class="block">
+        <header>
+            <div class="box">
+                <h1>NEW FILE</h1>
+            </div>
+            <div class="in">
+                <a href="login.html">Home</a>
+                <a href="register.html">Dashboard</a>
+            </div>
+        </header>
+        <container class="container">
+            <form method="POST" action="/ServiceAjouterMessage" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="title">
+                        <input type="text" id="title" name="title" placeholder="Title" required maxlength = "40"
+                        {# {% if info['title'] is defined %} valeur="{{info['title']}}" {% endif %} #}
+                        >
+                        {# {% if erreur['title'] is defined %} <div>{{erreur['title']}}</div> {% endif %} #}
+                        </label>
+                        <label for="description">
+                        <input type="text" id="description" name="description" placeholder="Description" required >
+                        {# {% if erreur['description'] is defined %} <div>{{erreur['description']}}</div> {% endif %} #}
+                        </label>
+                        <label for="blob">
+                        <input type="file" id="blob" name="blob"  accept=".stl" multiple placeholder="File" required >
+                        </label>
+                
+                </div>
+                <button type="submit" class="btn" value="Upload">Envoyer</button>
+                </form> 
+        </container>
+    </div>
+</body>
+</html>
