@@ -22,10 +22,13 @@
         {% for files in files %}
         <card class="card">
             <div class="display" data-file="{{files.file}}"></div>
-            <h2>{{ files.title }}</h2>
-            <p>{{ files.description }}</p>
+                <h2>{{ files.title }}</h2>
+                <p>{{ files.description }}</p>
+                <a href="/delete/{{ files.id }}" data-file="{{ files.id }}">Delete</a>
         </card>
         {% endfor %}
+
+
     </container>
 </div>
 <script type="module" src="/assets/js/OrbitControls.js"></script>

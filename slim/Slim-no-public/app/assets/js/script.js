@@ -23,7 +23,7 @@ canvas.forEach((canvas) => {
 // 
     // Chargez le fichier STL
     loader.load('data:application/octet-stream;base64,'+ fileContent, function (geometry) {
-        var material = new THREE.MeshMatcapMaterial()
+        var material = new THREE.MeshMatcapMaterial();
         var mesh = new THREE.Mesh(geometry, material);
         scene.add(mesh);
 

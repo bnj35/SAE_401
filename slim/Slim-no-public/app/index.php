@@ -58,6 +58,9 @@ $app->get('/register',\SAE_401\Controllers\register::class.':doIt')
 $app->post('/connexion', \SAE_401\Services\Connexion::class.':doIt')
     ->setName('connexion');
 
+
+    $app->get('/delete/{id}', \SAE_401\Services\Delete::class . ':doIt');
+
     $app->post('/inscription', \SAE_401\Services\inscription::class.':doIt')
     ->setName('inscription');
 

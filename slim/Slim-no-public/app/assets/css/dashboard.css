@@ -114,3 +114,13 @@ border: 1px solid whitesmoke;
     font-size: 0.8rem;
 }
 
+
+.card a:link, .card a:visited, .card a:hover, .card a:active{
+    color: whitesmoke;
+    text-decoration:underline;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top: 0.5vh;
+}
+
+
